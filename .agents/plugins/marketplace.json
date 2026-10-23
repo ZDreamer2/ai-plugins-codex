@@ -1,0 +1,32 @@
+{
+	"name": "zd-plugins",
+	"interface": {
+		"displayName": "ZDreamer2 plugins"
+	},
+	"plugins": [
+		{
+			"name": "ai-doc",
+			"source": {
+				"source": "local",
+				"path": "./ai-doc"
+			},
+			"policy": {
+				"installation": "AVAILABLE",
+				"authentication": "ON_INSTALL"
+			},
+			"category": "Productivity"
+		},
+		{
+			"name": "ai-marketplace",
+			"source": {
+				"source": "local",
+				"path": "./ai-marketplace"
+			},
+			"policy": {
+				"installation": "AVAILABLE",
+				"authentication": "ON_INSTALL"
+			},
+			"category": "Productivity"
+		}
+	]
+}
