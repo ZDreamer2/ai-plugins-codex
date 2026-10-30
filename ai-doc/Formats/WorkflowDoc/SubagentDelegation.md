@@ -1,0 +1,8 @@
+# Subagent Delegation
+
+When a delegated task recurs with stable instructions, record its prompt in the workflow so it can be formulated and reviewed once, then reused consistently. Use placeholders for values that vary between executions.
+
+- Use `spawn_agent` with `fork_turns: "all"` (a fork: it inherits the parent session's context) when the prompt relies on the workflow's current context.
+- Use spawn_agent when the prompt is self-contained; the prompt MUST provide all required context.
+- State the delegated task and expected output clearly.
+- State how the parent uses the result when later work depends on it.
